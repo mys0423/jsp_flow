@@ -6,7 +6,6 @@ import java.util.Optional;
 import org.apache.ibatis.session.SqlSession;
 
 import com.app.mybatis.config.MyBatisConfig;
-import com.app.vo.PostVO;
 import com.app.vo.ProductVO;
 
 public class ProductDAO {

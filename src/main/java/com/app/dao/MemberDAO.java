@@ -48,4 +48,8 @@ public class MemberDAO {
 	public Optional<MemberVO> findById(Long id){
 		return Optional.ofNullable(sqlSession.selectOne("member.selectById", id));
 	}
+	
+	public Long selectIdByMemberEmail(String memberEmail) {
+		return sqlSession.selectOne("member.selectIdByMemberEmail", memberEmail);
+	}
 }
